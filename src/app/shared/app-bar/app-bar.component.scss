@@ -1,0 +1,23 @@
+.app-bar {
+    background-color: var(--card-background);
+    padding: 1.25rem 1rem;
+
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .app-bar-back-button {
+            background-color: rgba($color: var(--heading-color), $alpha: 1);
+            color: var(--heading-color);
+            border: none;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .app-bar-title {
+            color: var(--heading-color);
+            font-weight: 500;
+        }
+    }
+}

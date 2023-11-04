@@ -1,0 +1,35 @@
+.stats-card {
+    background-color: var(--card-background);
+    border-radius: .5rem;
+    padding: 2rem .625rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: .5rem;
+    .card-header {
+        .icon-holder {
+            background-color: var(--primary-color);
+            width: 2.25rem;
+            height: 2.25rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 1.125rem;
+        }
+    }
+    .card-body {
+        .card-title {
+            font-size: .75rem;
+            font-weight: 400;
+        }
+        .card-data {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+            text-align: center;
+        }
+    }
+}

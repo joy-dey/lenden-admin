@@ -1,0 +1,29 @@
+<section class="app-section">
+    <header class="app-header">
+        <div class="container">
+            <p class="greeting-message">
+                <i [class]="greetingData.icon"></i>
+                <span>{{greetingData.message}}</span>
+            </p>
+            <div class="welcome-container">
+                <div class="user-data-block">
+                    <p class="greeting-message">Hello, Sujit</p>
+                    <span class="welcome-back-message">Welcome back to your dashboard</span>
+                </div>
+                <div class="user-icon-block">
+                    <span>S</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="app-body">
+        <section class="quick-stats-section">
+            <div class="container">
+               <app-stats-card *ngFor="let stat of statsData" [icon]="stat.icon" [title]="stat.title" [data]="stat.data"></app-stats-card>
+            </div>
+        </section>
+    </main>
+
+    <button (click)="applyTheme()">Toggle Theme</button>
+</section>

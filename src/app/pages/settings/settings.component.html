@@ -1,0 +1,17 @@
+<section class="app-section">
+    <app-bar title="Settings"></app-bar>
+    <main class="app-body">
+        <div class="profile-info-block">
+            
+        </div>
+        <div class="data-block" *ngFor="let data of settingOptions">
+            <small class="data-block-title">{{data.title}}</small>
+            <ul class="nav-block">
+                <li *ngFor="let option of data.options">
+                    <i [class]="option.icon"></i>
+                    <span>{{option.name}}</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+</section>

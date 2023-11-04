@@ -1,0 +1,22 @@
+// dark theme
+[data-theme="dark"] {
+    --background-color: #16161A;
+    --heading-color: #FFFFFE;
+    --paragraph-color: #94A1B2;
+    --card-background: #242629;
+    --primary-color: #7F5AF0;
+    --navigation-background: #242629;
+    --action-button-background: #7F5AF0;
+
+}
+
+// light theme
+[data-theme="light"] {
+    --background-color: #FFFFFF;
+    --heading-color: #000000;
+    --paragraph-color: #000000;
+    --card-background: #f3f3f3;
+    --primary-color: #000000;
+    --navigation-background: #000000;
+    --action-button-background: #ffffff;
+}

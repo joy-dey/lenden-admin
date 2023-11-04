@@ -5,9 +5,9 @@ $max-width: 320;
 $icon-color: #ffffff;
 
 .bottom-nav {
-    background-color: $background-color;
-    max-width: math.div($max-width, 16) +rem;
-    width: math.div($max-width, 16) +rem;
+    background-color: var(--navigation-background);
+    max-width: 20rem;
+    width: 20rem;
     border-radius: 2rem;
     position: fixed;
     padding: 0 .5rem;
@@ -25,26 +25,59 @@ $icon-color: #ffffff;
             .nav-link {
                 color: $icon-color;
                 text-decoration: none;
-                padding: 1rem;
+                padding: 1.25rem;
                 display: inline-flex;
                 cursor: pointer;
+                font-size: 1.25rem;
+                -webkit-tap-highlight-color: transparent;
 
                 &:not(.is-pill) {
                     opacity: .4;
 
                 }
+
+                &:is(.active) {
+                    opacity: 1;
+                }
             }
 
             .is-pill {
                 color: $background-color;
-                background-color: $icon-color;
+                background-color: var(--action-button-background);
                 padding: .5rem 1.25rem;
                 border-radius: 2rem;
+                color: var(--heading-color);
             }
 
-            .active {
-                opacity: 1;
+
+        }
+    }
+}
+
+@media screen and (min-width: 990px) {
+    .bottom-nav {
+        left: 2rem;
+        top: 50%;
+        transform: translateY(-50%);
+        width: max-content;
+        height: 20rem;
+
+        .container {
+            justify-content: center;
+            flex-direction: column;
+            height: 100%;
+            gap: .5rem;
+
+            .nav-items {
+                .nav-link {
+                    padding: .9rem;
+                }
+
+                .is-pill {
+                    padding: 1.25rem .5rem;
+                }
             }
+
         }
     }
 }

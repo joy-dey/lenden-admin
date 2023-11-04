@@ -1,0 +1,57 @@
+.app-header {
+    .container {
+        .greeting-message {
+            text-transform: uppercase;
+            display: flex;
+            gap: .25rem;
+            margin-top: 0;
+            align-items: center;
+            font-weight: 600;
+            font-size: .75rem;
+            color: var(--primary-color);
+        }
+
+        .welcome-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .user-data-block {
+                .greeting-message {
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    margin-bottom: 0;
+                    margin-top: 0;
+                    color: var(--heading-color);
+                }
+                .welcome-back-message {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+
+            .user-icon-block {
+                background-color: var(--primary-color);
+                font-size: 1.5rem;
+                width: 2.5rem;
+                height: 2.5rem;
+                color: #ffffff;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.app-body {
+    .quick-stats-section {
+        margin-top: 1.5rem;
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 1rem;
+        }
+    }
+}
